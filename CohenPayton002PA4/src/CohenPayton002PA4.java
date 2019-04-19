@@ -1,4 +1,4 @@
-public class Cohen002PA4
+public class CohenPayton002PA4
 {
   
 }
