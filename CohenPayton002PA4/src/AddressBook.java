@@ -52,22 +52,22 @@ public class AddressBook
     {
       addressBook[i] = new Addressee();
       addressBook[i].setAddressee(); //sets addressee
-      addressBook[i].setStreet(); //sets street
-      addressBook[i].setCityStateZip(); //sets cityStateZip
-      addressBook[i].setPhone(); //set phone
+      addressBook[i].setStreet(addressBook[i].getAddressee()); //sets street
+      addressBook[i].setCityStateZip(addressBook[i].getAddressee()); //sets cityStateZip
+      addressBook[i].setPhone(addressBook[i].getAddressee()); //set phone
       addressBook[i].setRelationship(); //sets relationship
     }//END for 
   }//END createAddressBook
   
   public void displayAddressBook()
   {
+    boolean hasFamily = false, hasFriends = false, hasWork = false;
     for(int j = 0; j < addressBook.length; j++)
     {
       String family = String.format("%nFAMILY%n"); //String variable that prints "FAMILY" as relationship
       String friend = String.format("%nFRIENDS%n"); //String variable that prints "FRIENDS" as relationship
       String work = String.format("%nWORK%n"); //String variable that prints "WORK" as relationship
       
-      boolean hasFamily = false, hasFriends = false, hasWork = false;
       
       switch(addressBook[size].getRelationship())
       {

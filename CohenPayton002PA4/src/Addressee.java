@@ -64,7 +64,7 @@ public class Addressee
   {
     return cityStateZip;
   }
-  public String phone()
+  public String getPhone()
   {
     return phone;
   }

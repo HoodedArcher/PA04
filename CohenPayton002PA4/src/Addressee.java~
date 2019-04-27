@@ -2,8 +2,8 @@
  * @(#)Addressee.java
  * @author Charlton Cohen
  * @version 1.0 2019/4/25 8:00 PM
- * Program Putpose: Creates an address book for the user. Prompts the user to create entries for addressee's
- * this information is stored in an array and when the user is done inputting addressee's the array is printed.
+ * Program Putpose: Prompts the user for all elements necesssary for creating an address book entry and provides
+ * framework for passing this information to the rest of the program for storage and display.
  */ 
 
 import java.util.Scanner;
